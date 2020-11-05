@@ -32,7 +32,11 @@ if (cluster.isWorker){
             require('./lib/blockUnlocker.js');
             break;
         case 'paymentProcessor':
-            require('./lib/paymentProcessor.js');
+            if ("Infinium8" == config.coin) {
+                require('./lib/infinium_payment_processor.js');
+            } else {
+                require('./lib/paymentProcessor.js');
+            }
             break;
         case 'api':
             require('./lib/api.js');
