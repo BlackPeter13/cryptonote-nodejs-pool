@@ -3,6 +3,7 @@ cryptonote-nodejs-pool for merged mining
 
 High performance Node.js (with native C addons) mining pool for CryptoNote based coins. Comes with lightweight example front-end script which uses the pool's AJAX API. Support for Cryptonight (Original, Monero v7, Stellite v7), Cryptonight Light (Original, Aeon v7, IPBC), Cryptonight Pico (Trtl) and Cryptonight Heavy (Sumokoin) algorithms. With Merged mining support.
 
+⚠️ When setting up an infinium pool for other algo than cn/0 don't forget to specify InfiniumAlgo
 
 #### Table of Contents
 * [Features](#features)
@@ -188,12 +189,15 @@ Explanation for each field:
 
 /* Set Cryptonight algorithm settings.
    Supported algorithms: cryptonight (default). cryptonight_light and cryptonight_heavy
-   Supported variants for "cryptonight": 0 (Original), 1 (Monero v7), 3 (Stellite / XTL)
-   Supported variants for "cryptonight_light": 0 (Original), 1 (Aeon v7), 2 (IPBC)
-   Supported blob types: 0 (Cryptonote), 1 (Forknote v1), 2 (Forknote v2), 3 (Cryptonote v2 / Masari) */
-"cnAlgorithm": "cryptonight",
+   Supported variants for "cryptonight": 0 (Original), 1 (Monero v7), 2 (Monero/Infinium v8), 3 (Stellite / XTL)
+   Supported variants for "cryptonight_light": 0 (Original), 1 (Aeon/Infinium v7), 2 (IPBC)
+   Supported blob types: 0 (Cryptonote), 1 (Forknote v1), 2 (Forknote v2), 3 (Cryptonote v2 / Masari) 
+   Supported InfiniumAlgo "" (empty - cn/asic), "cn-v2" (cryptonight v2(v8)), "cn-lite" (cryptonight light v1(v7))  
+   !!! You need to specify your algo in both cnVariant and InfiniumAlgo*/
+"cnAlgorithm": "cryptonight_light",
 "cnVariant": 1,
 "cnBlobType": 0,
+"InfiniumAlgo": "cn-lite",
 
 /* Logging */
 "logging": {
