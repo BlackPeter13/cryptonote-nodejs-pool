@@ -11,6 +11,7 @@
     "cnAlgorithm": "cryptonight",
     "cnVariant": 0,
     "cnBlobType": 0,
+    "InfiniumAlgo": "",
 
     "logging": {
         "files": {
@@ -30,7 +31,7 @@
         "clusterForks": 1,
         "poolAddress": "pool wallet address",
         "subAddressPrefix": "1288825",
-	"intAddressPrefix": "88386169",
+	    "intAddressPrefix": "88386169",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "sslCert": "./cert.pem",
