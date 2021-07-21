@@ -5,13 +5,16 @@
     "symbol": "INF8",
     "coinUnits": 1000000000000,
     "coinDecimalPlaces": 4,
-    "coinDifficultyTarget": 90,
+    "coinDifficultyTarget": 15,
+
+     "childCoin": "armor",
 
     "daemonType": "bytecoin",
     "cnAlgorithm": "cryptonight",
-    "cnVariant": 0,
+    "cnVariant": 15,
     "cnBlobType": 0,
-    "InfiniumAlgo": "",
+    "InfiniumAlgo": "cn-zls",
+    "is_child_amx_api": true,
 
     "logging": {
         "files": {
@@ -27,17 +30,19 @@
 
     "poolServer": {
         "enabled": true,
-        "mergedMining": false,
+        "mergedMining": true,
         "clusterForks": 1,
-        "poolAddress": "pool wallet address",
+        "poolAddress": "inf8TBfKP8oNoRGWYAFNF4ExX4EDbfsBzVxSfvGZz6RMEfVj4GETHJvUnWLxpXijvAHR6UAg81GAofJ8BtvCVduE91AXsYY9xr",
+        "poolChildAddress": "RRSiq9qaNWANkaQupuDbmsYKyccoDQ8TWLkPsZ1C82wafR3VUYPSwKdivW9W4ziKXQ8MwksXjCmoV42DLw335A5F1SFHz5S59",
         "subAddressPrefix": "1288825",
-        "intAddressPrefix": "88386169",
+	    "intAddressPrefix": "88386169",
         "blockRefreshInterval": 1000,
         "minerTimeout": 900,
         "sslCert": "./cert.pem",
         "sslKey": "./privkey.pem",
         "sslCA": "./chain.pem",
-        "ports": [{
+        "ports": [
+	    {
                 "port": 3333,
                 "difficulty": 5000,
                 "desc": "Low end hardware"
@@ -54,7 +59,7 @@
             },
             {
                 "port": 7777,
-                "difficulty": 500000,
+                "difficulty": 15000,
                 "desc": "Cloud-mining / NiceHash"
             },
             {
@@ -67,8 +72,8 @@
         "varDiff": {
             "minDiff": 500,
             "maxDiff": 1000000000,
-            "targetTime": 45,
-            "retargetTime": 40,
+            "targetTime": 3,
+            "retargetTime": 15,
             "variancePercent": 30,
             "maxJump": 60
         },
@@ -97,7 +102,7 @@
             "weight": 300,
             "blockTime": 60,
             "lastBlockCheckRate": 1
-        }
+         }
     },
 
     "payments": {
@@ -122,7 +127,7 @@
         "devDonation": 0.9,
         "reportFee": 1,
         "networkFee": 0,
-        "fixBlockHeightRPC": true
+	    "fixBlockHeightRPC": true
     },
 
     "api": {
@@ -145,6 +150,11 @@
     "daemon": {
         "host": "127.0.0.1",
         "port": 27855
+    },
+
+    "childDaemon": {
+        "host": "127.0.0.1",
+        "port": 58081
     },
 
     "wallet": {
@@ -234,7 +244,7 @@
             "blocks": "/blocks"
         }
     },
-
+    
     "monitoring": {
         "daemon": {
             "checkInterval": 60,
@@ -250,7 +260,7 @@
         "source": "tradeogre",
         "currency": "USD"
     },
-
+    
     "charts": {
         "pool": {
             "hashrate": {

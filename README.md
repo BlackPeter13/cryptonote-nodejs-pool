@@ -192,7 +192,7 @@ Explanation for each field:
    Supported variants for "cryptonight": 0 (Original), 1 (Monero v7), 2 (Monero/Infinium v8), 3 (Stellite / XTL)
    Supported variants for "cryptonight_light": 0 (Original), 1 (Aeon/Infinium v7), 2 (IPBC)
    Supported blob types: 0 (Cryptonote), 1 (Forknote v1), 2 (Forknote v2), 3 (Cryptonote v2 / Masari) 
-   Supported InfiniumAlgo "" (empty - cn/asic), "cn-v2" (cryptonight v2(v8)), "cn-lite" (cryptonight light v1(v7))  
+   Supported InfiniumAlgo "" (empty - cn/asic), "cn-zls" (cryptonight v2(v8)), "cn-lite" (cryptonight light v1(v7))  
    !!! You need to specify your algo in both cnVariant and InfiniumAlgo*/
 "cnAlgorithm": "cryptonight_light",
 "cnVariant": 1,

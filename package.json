@@ -5,7 +5,7 @@
     "author": "Daniel Vandal",
     "repository": {
         "type": "git",
-        "url": "https://github.com/dvandal/cryptonote-nodejs-pool.git"
+        "url": "https://github.com/Infinium-dev/infinium-nodejs-pool.git"
     },
     "dependencies": {
         "async": "1",
@@ -13,7 +13,7 @@
         "bignum": "*",
         "cli-color": "*",
         "cryptoforknote-util": "git://github.com/campurro/node-cryptoforknote-util.git",
-        "cryptonight-hashing": "git://github.com/MoneroOcean/node-cryptonight-hashing.git",
+        "cryptonight-hashing": "git://github.com/Infinium-dev/node-cryptonight-hashing.git",
         "dateformat": "*",
         "mailgun.js": "*",
         "node-telegram-bot-api": "*",
