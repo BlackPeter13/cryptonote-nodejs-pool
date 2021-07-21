@@ -72,8 +72,8 @@
         "varDiff": {
             "minDiff": 500,
             "maxDiff": 1000000000,
-            "targetTime": 3,
-            "retargetTime": 15,
+            "targetTime": 25,
+            "retargetTime": 45,
             "variancePercent": 30,
             "maxJump": 60
         },
