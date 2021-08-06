@@ -1,6 +1,6 @@
 The LOUD Mining Network of Pools
 =========================
-This repository contains the pool software and website for https://loudmining.com
+This repository contains the pool software and website for the old loudmining.com website.
 
 Credits
 -------
