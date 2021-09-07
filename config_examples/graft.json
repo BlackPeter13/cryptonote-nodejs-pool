@@ -6,14 +6,16 @@
 	"coinUnits": 10000000000,
 	"coinDecimalPlaces": 4,
 	"coinDifficultyTarget": 120,
-	"blockchainExplorer": "http://blockexplorer.arqma.com/block/{id}",
-	"transactionExplorer": "http://blockexplorer.arqma.com/tx/{id}",
+	"blockchainExplorer": "https://blockexplorer.graft.network/block/{id}",
+	"transactionExplorer": "https://blockexplorer.graft.network/tx/{id}",
 	"daemonType": "default",
-	"cnAlgorithm": "cryptonight",
-	"cnVariant": 15,
+	"cnAlgorithm": "randomx",
+	"isRandomX": true,
+        "includeHeight": true,
+	"cnVariant": 20,
 	"cnBlobType": 0,
 
-	"logging": {
+		"logging": {
 		"files": {
 			"level": "info",
 			"directory": "logs",
@@ -108,7 +110,6 @@
 			"lastBlockCheckRate": 1
 		}
 	},
-
 	"payments": {
 		"enabled": true,
 		"interval": 1800,
@@ -123,7 +124,6 @@
 		"maxTransactionAmount": 0,
 		"denomination": 1000000000
 	},
-
 	"blockUnlocker": {
 		"enabled": true,
 		"interval": 30,
@@ -132,7 +132,6 @@
 		"devDonation": 0.2,
 		"networkFee": 0.0
 	},
-
 	"api": {
 		"enabled": true,
 		"hashrateWindow": 600,
@@ -149,17 +148,14 @@
 		"sslCA": "./chain.pem",
 		"trustProxyIP": true
 	},
-
 	"daemon": {
 		"host": "127.0.0.1",
 		"port": 18981
 	},
-
 	"wallet": {
 		"host": "127.0.0.1",
 		"port": 18982
 	},
-
 	"redis": {
 		"host": "127.0.0.1",
 		"port": 6379,
@@ -167,7 +163,6 @@
 		"db": 0,
 		"cleanupInterval": 15
 	},
-
 	"notifications": {
 		"emailTemplate": "email_templates/default.txt",
 		"emailSubject": {
@@ -200,7 +195,6 @@
 			"payment": "A payment of _%AMOUNT%_ has been sent."
 		}
 	},
-
 	"email": {
 		"enabled": false,
 		"fromAddress": "your@email.com",
@@ -225,7 +219,6 @@
 			"domain": "mg.yourdomain"
 		}
 	},
-
 	"telegram": {
 		"enabled": false,
 		"botName": "",
@@ -242,7 +235,6 @@
 			"blocks": "/blocks"
 		}
 	},
-
 	"monitoring": {
 		"daemon": {
 			"checkInterval": 60,
@@ -253,12 +245,10 @@
 			"rpcMethod": "getbalance"
 		}
 	},
-
 	"prices": {
 		"source": "tradeogre",
 		"currency": "USD"
 	},
-
 	"charts": {
 		"pool": {
 			"hashrate": {
