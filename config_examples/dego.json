@@ -1,4 +1,6 @@
-{
+{ 
+  "poolHost": "your.pool.host",
+  
   "coin": "derogold",
   "symbol": "DEGO",
   "coinUnits": 100,
