@@ -16,7 +16,7 @@
         "cryptoforknote-util": "https://github.com/LOUD-Mining/node-cryptoforknote-util.git",
         "cryptonight-hashing": "https://github.com/LOUD-Mining/node-cryptonight-hashing.git",
         "dateformat": "*",
-        "mailgun.js": "git://github.com/LOUD-Mining/mailgun-js.git",
+        "mailgun.js": "https://github.com/LOUD-Mining/mailgun-js.git",
         "node-telegram-bot-api": "*",
         "nodemailer": "6.8.0",
         "nodemailer-sendmail-transport": "*",
