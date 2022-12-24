@@ -15,13 +15,13 @@
         "cli-color": "*",
         "cryptoforknote-util": "https://github.com/LOUD-Mining/node-cryptoforknote-util.git",
         "cryptonight-hashing": "https://github.com/LOUD-Mining/node-cryptonight-hashing.git",
-        "dateformat": "*",
+        "dateformat": "^4.5.1",
         "mailgun.js": "https://github.com/LOUD-Mining/mailgun-js.git",
         "node-telegram-bot-api": "*",
         "nodemailer": "6.8.0",
         "nodemailer-sendmail-transport": "*",
-        "redis": "*",
-        "socket.io": "^2.1.1",
+        "redis": "^3.1.2",
+        "socket.io": "^3.1.1",
         "time-ago": "*"
     },
     "engines": {
