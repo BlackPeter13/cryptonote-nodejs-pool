@@ -6,9 +6,9 @@
 	"coinUnits": 10000000,
 	"coinDecimalPlaces": 7,
 	"coinDifficultyTarget": 480,
-	"blockchainExplorer": "http://fuego.spaceportx.net/block/{id}",
-	"transactionExplorer": "http://fuego.spaceportx.net/tx/{id}",
-	"daemonType": "default",
+	"blockchainExplorer": "http://explore-xfg.loudmining.com/index.html?hash={id}#blockchain_block",
+	"transactionExplorer": "http://explore-xfg.loudmining.com/index.html?hash={id}#blockchain_transaction",
+	"daemonType": "fuego",
 	"cnAlgorithm": "cryptonight",
 	"cnVariant": 8,
 	"cnBlobType": 2,
@@ -16,7 +16,7 @@
 	"logging": {
 		"files": {
 			"level": "info",
-			"directory": "logs",
+			"directory": "logs/xfg/",
 			"flushInterval": 5
 		},
 		"console": {
@@ -114,9 +114,9 @@
 	"blockUnlocker": {
 		"enabled": true,
 		"interval": 30,
-		"depth": 10,
-		"poolFee": 1.0,
-		"devDonation": 0.0,
+		"depth": 60,
+		"poolFee": 0.0,
+		"devDonation": 1.0,
 		"networkFee": 0.0,
 		"fixBlockHeightRPC": false
 	},
@@ -145,7 +145,7 @@
 
 	"wallet": {
 		"host": "127.0.0.1",
-		"port": 8071
+		"port": 8070
 	},
 
 	"redis": {
@@ -232,11 +232,11 @@
 	"monitoring": {
 		"daemon": {
 			"checkInterval": 60,
-			"rpcMethod": "get_status"
+			"rpcMethod": "getStatus"
 		},
 		"wallet": {
 			"checkInterval": 60,
-			"rpcMethod": "get_balance"
+			"rpcMethod": "getBalance"
 		}
 	},
 
