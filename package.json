@@ -15,7 +15,7 @@
         "cli-color": "*",
         "cryptoforknote-util": "https://github.com/LOUD-Mining/node-cryptoforknote-util.git",
         "cryptonight-hashing": "https://github.com/LOUD-Mining/node-cryptonight-hashing.git",
-        "dateformat": "^4.5.1",
+        "dateformat": "^4.0.0",
         "mailgun.js": "https://github.com/LOUD-Mining/mailgun-js.git",
         "node-telegram-bot-api": "*",
         "nodemailer": "6.8.0",
