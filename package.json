@@ -11,7 +11,7 @@
     "dependencies": {
         "async": "1",
         "base58-native": "*",
-        "bignum": "*",
+        "bignum": "https://github.com/justmoon/node-bignum",
         "cli-color": "*",
         "cryptoforknote-util": "https://github.com/LOUD-Mining/node-cryptoforknote-util.git",
         "cryptonight-hashing": "https://github.com/LOUD-Mining/node-cryptonight-hashing.git",
