@@ -31,10 +31,6 @@ High performance Node.js (with native C addons) mining pool for CryptoNote based
   * [Upgrading](#upgrading)
 * [JSON-RPC Commands from CLI](#json-rpc-commands-from-cli)
 * [Monitoring Your Pool](#monitoring-your-pool)
-* [Community Support](#community--support)
-* [Pools Using This Software](#pools-using-this-software)
-* [Referral Links](#referral-links)
-* [Donations](#donations)
 * [Credits](#credits)
 * [License](#license)
 
