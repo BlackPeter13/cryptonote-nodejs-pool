@@ -124,7 +124,7 @@ Usage
   logoff, then re-login using the credentials you just created...  You're welcome 😉
 
 * **Important** If you have not already done so please enable swap space on your machine.
-  `https://www.howtogeek.com/455981/how-to-create-a-swap-file-on-linux/`  -- this works well 😀
+  https://www.howtogeek.com/455981/how-to-create-a-swap-file-on-linux/  -- this works well 😀
 
 * Install all dependencies first
 * libssl required for the node-multi-hashing module
