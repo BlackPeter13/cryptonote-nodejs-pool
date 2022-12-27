@@ -8,7 +8,7 @@
 	"coinDifficultyTarget": 480,
 	"blockchainExplorer": "http://explore-xfg.loudmining.com/index.html?hash={id}#blockchain_block",
 	"transactionExplorer": "http://explore-xfg.loudmining.com/index.html?hash={id}#blockchain_transaction",
-	"daemonType": "fuego",
+	"daemonType": "default",
 	"cnAlgorithm": "cryptonight",
 	"cnVariant": 8,
 	"cnBlobType": 2,
